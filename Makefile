@@ -28,8 +28,12 @@ uboot_standard_defconfig: check_env
           then \
             echo "U-Boot Contains <.config> file, not overwriting";\
           else\
-            make -C ${OS_UBOOT_ROOT} zynq_zc702_defconfig; \
+            make -C ${OS_UBOOT_ROOT} zynq_sapucb_defconfig; \
           fi;
+
+.PHONY: uboot_standard_xconfig
+uboot_standard_xconfig: check_env
+	make -C ${OS_UBOOT_ROOT} xconfig
 
 .PHONY: uboot_standard_clean
 uboot_standard_clean:
