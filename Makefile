@@ -2,7 +2,7 @@
 #
 export OS_UBOOT_CONTAINER_ROOT := $(shell pwd)
 include ${OS_UBOOT_CONTAINER_ROOT}/config/machine.mk
-export OS_UBOOT_ROOT := ${OS_UBOOT_CONTAINER_ROOT}/u-boot-xlnx
+export OS_UBOOT_ROOT := ${OS_UBOOT_CONTAINER_ROOT}/u-boot
 export OS_UBOOT_DEPLOY_ROOT := ${OS_UBOOT_CONTAINER_ROOT}/deploy
 export OS_UBOOT_TOOLS_ROOT := ${OS_UBOOT_ROOT}/tools
 export OS_UBOOT_CONFIG_ROOT := ${OS_UBOOT_CONTAINER_ROOT}/config
